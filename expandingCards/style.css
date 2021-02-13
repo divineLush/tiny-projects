@@ -28,7 +28,15 @@ body {
   flex: 0.5;
   margin: 10px;
   position: relative;
-  transition: flex 0.7s ease-in;
+  transition: all 0.5s ease-in;
+  border: none;
+  outline: none;
+}
+
+.panel:hover,
+.panel:focus {
+  filter: brightness(.7);
+  opacity: 0.6;
 }
 
 .panel h3 {
@@ -41,10 +49,14 @@ body {
 
 .panel._active {
   flex: 5;
+  filter: brightness(1);
+  opacity: 1;
 }
 
 .panel._active h3 {
   opacity: 1;
+  /* .2 seconds of delay */
+  transition: opacity .3s ease-in .2s;
 }
 
 @media (max-width: 480px) {
