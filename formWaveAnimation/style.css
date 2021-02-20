@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: #72aa43;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -26,7 +30,7 @@ body {
 }
 
 .container a {
-  color: #72aa43;
+  color: var(--color-primary);
 }
 
 .form-control {
@@ -47,11 +51,35 @@ body {
   outline: 0;
 }
 
+.form-control input:focus,
+.form-control input:valid {
+  border-bottom-color: var(--color-primary);
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: all .3s ease-out;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: var(--color-primary);
+  transform: translateY(-30px);
+}
+
 .btn {
   cursor: pointer;
   display: inline-block;
   width: 100%;
-  background-color: #72aa43;
+  background-color: var(--color-primary);
   padding: 15px;
   font-family: inherit;
   font-size: 16px;
@@ -63,7 +91,7 @@ body {
 
 .btn:hover,
 .btn:focus {
-  opacity: .8;
+  background-color: rgba(114, 170, 67, .6);
 }
 
 .btn:active {
