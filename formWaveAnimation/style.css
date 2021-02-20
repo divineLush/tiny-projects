@@ -33,13 +33,13 @@ body {
   color: var(--color-primary);
 }
 
-.form-control {
+.form__control {
   position: relative;
   margin: 20px 0 40px;
   width: 300px;
 }
 
-.form-control input {
+.form__input {
   background-color: transparent;
   border: 0;
   border-bottom: 2px #fff solid;
@@ -51,31 +51,31 @@ body {
   outline: 0;
 }
 
-.form-control input:focus,
-.form-control input:valid {
+.form__input:focus,
+.form__input:valid {
   border-bottom-color: var(--color-primary);
 }
 
-.form-control label {
+.form__label {
   position: absolute;
   top: 15px;
   left: 0;
 }
 
-.form-control label span {
+.form__label-letter {
   display: inline-block;
   font-size: 18px;
   min-width: 5px;
   transition: all .3s ease-out;
 }
 
-.form-control input:focus + label span,
-.form-control input:valid + label span {
+.form__input:focus + .form__label .form__label-letter,
+.form__input:valid + .form__label .form__label-letter {
   color: var(--color-primary);
   transform: translateY(-30px);
 }
 
-.btn {
+.form__btn {
   cursor: pointer;
   display: inline-block;
   width: 100%;
@@ -89,11 +89,11 @@ body {
   color: #fff;
 }
 
-.btn:hover,
-.btn:focus {
+.form__btn:hover,
+.form__btn:focus {
   background-color: rgba(114, 170, 67, .6);
 }
 
-.btn:active {
+.form__btn:active {
   transform: scale(.97);
 }

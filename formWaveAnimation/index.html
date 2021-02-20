@@ -10,23 +10,33 @@
   <title>Form Input Wave</title>
 </head>
 <body>
-  <div class="container">
+  <main class="container">
     <h1>Please Login</h1>
-    <form>
-      <div class="form-control">
-        <input type="text" required>
-        <label>Email</label>
+    <form class="form">
+      <div class="form__control">
+        <input class="form__input" type="text" required>
+        <label class="form__label">
+          <span class="form__label-letter">Email</span>
+          <!-- wave effect -->
+          <!-- <span class="form__label-letter" style="transition-delay: 50ms">E</span>
+          <span class="form__label-letter" style="transition-delay: 100ms">m</span>
+          <span class="form__label-letter" style="transition-delay: 150ms">a</span>
+          <span class="form__label-letter" style="transition-delay: 200ms">i</span>
+          <span class="form__label-letter" style="transition-delay: 250ms">l</span> -->
+        </label>
       </div>
-      <div class="form-control">
-        <input type="password" required>
-        <label>Password</label>
+      <div class="form__control">
+        <input class="form__input" type="password" required>
+        <label class="form__label">
+          <span class="form__label-letter">Password</span>
+        </label>
       </div>
-      <button class="btn">Login</button>
-      <p class="text">
+      <button class="form__btn">Login</button>
+      <p>
         Don't have an account? <a href="#">Register</a>
       </p>
     </form>
-  </div>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
