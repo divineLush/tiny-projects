@@ -58,5 +58,5 @@ body {
 
 .container__btn:hover,
 .container__btn:focus {
-  background-color: rgba(119, 104, 224, .8);
+  background-color: rgba(119, 104, 224, .5);
 }
