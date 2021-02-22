@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#228b22, #72aa43);
+  color: #fff;
+  font-family: monospace;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.title {
+  margin: 40px 0;
+}
+
+.key {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px;
+  margin: 10px auto;
+  min-width: 150px;
+}
+
+.key__name {
+  font-size: 16px;
+}
